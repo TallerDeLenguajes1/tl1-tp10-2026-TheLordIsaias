@@ -21,18 +21,18 @@ if(listaTareas != null)
     Console.WriteLine("----- Tareas No Completadas -----");
     foreach (var tarea in listaTareas)
     {
-        if (!tarea.Completado)
+        if (!tarea.completed)
         {
-          Console.WriteLine($"ID Usuario: {tarea.UserID}\n-ID Tarea {tarea.IdTarea}\n-Titulo de la Tarea: {tarea.Titulo}\nCompletado: {tarea.Completado}");  
+          Console.WriteLine($"ID Usuario: {tarea.userId}\n-ID Tarea {tarea.id}\n-Titulo de la Tarea: {tarea.title}\nCompletado: {tarea.completed}");  
         }
         
     }
     Console.WriteLine("----- Tareas Completadas -----");
     foreach (var tarea in listaTareas)
     {
-        if (tarea.Completado)
+        if (tarea.completed)
         {
-          Console.WriteLine($"ID Usuario: {tarea.UserID}\n-ID Tarea {tarea.IdTarea}\n-Titulo de la Tarea: {tarea.Titulo}\nCompletado: {tarea.Completado}");  
+          Console.WriteLine($"ID Usuario: {tarea.userId}\n-ID Tarea {tarea.id}\n-Titulo de la Tarea: {tarea.title}\nCompletado: {tarea.completed}");   
         }
         
     }

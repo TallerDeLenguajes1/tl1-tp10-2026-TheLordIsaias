@@ -2,10 +2,10 @@ namespace Tareas
 {
     public class Tarea
     {
-        public int UserID{get; set;}
-        public int IdTarea{get; set;}
-        public string Titulo{get; set;}
-        public bool Completado{get; set;}
+        public int userId{get; set;}
+        public int id{get; set;}
+        public string title{get; set;}
+        public bool completed{get; set;}
 
     }
 }
