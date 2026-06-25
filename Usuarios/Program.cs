@@ -21,12 +21,12 @@ if(listaUsuarios != null)
     List<Usuario> primeros = listaUsuarios.Take(5).ToList();
     foreach (var usuario in primeros)
     {
-        Console.WriteLine($"Nombre: {usuario.name}\nCorreo Electronico: {usuario.email}\nDomicilio: {usuario.address.street}");
+        Console.WriteLine($"Nombre: {usuario.name}\nCorreo Electronico: {usuario.email}\nDomicilio: {usuario.address.street} {usuario.address.suite}");
     }
     string jsonString = JsonSerializer.Serialize(listaUsuarios);
     
     File.WriteAllText(archivoSalida, jsonString);
 } else
 {
-    Console.WriteLine("No se pudo recuperar la lista de Tareas");
+    Console.WriteLine("No se pudo recuperar la lista de Usuarios");
 }
